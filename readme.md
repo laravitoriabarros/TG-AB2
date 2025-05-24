@@ -40,30 +40,27 @@ git clone https://github.com/laravitoriabarros/TG-AB2.git
 
 ## 💻 Como testar
 
-# Testes Automatizados:
+### Testes Automatizados:
 
 Para verificar se os 4 algoritmos obrigatórios estão funcionando, primeiro navegue até a pasta Bat1:
 
 ```
 cd testes/Bat1
-
 ```
 
 Depois, execute o comando:
 
 ```
 bash Bat1.sh
-
 ```
 Para testar o quinto algoritmo é só seguir o mesmo passo a passo, a diferença é só que você estará indo para a pasta Bat2:
 
 ```
 cd testes/Bat2
 bash Bat2.sh
-
 ```
 
-# Testes Manuais:
+### Testes Manuais:
 
 Para verificar se a saída de determinado algoritmo está igual ao gabarito, podemos usar os seguintes comandos tomando o algoritmo Dijkstra como exemplo:
 
@@ -71,7 +68,6 @@ Para verificar se a saída de determinado algoritmo está igual ao gabarito, pod
 cd testes/Bat2
 ./dijkstra.bin -f instances/exemp.mtx -i 1 > minha_saida.txt
 diff -w minha_saida.txt sp/exemp.mtx
-
 ```
 
 Se não retornar nada, significa que está correto. Caso tenha erro, irá aparecer no terminal as diferenças de resposta.
@@ -83,12 +79,12 @@ Navegue até a pasta de cada algoritmo e execute os comandos abaixo, usando o al
 ```
 cd prim
 make
-
 ```
 
 Ou diretamente:
 
 ```
 g++ -std=c++11 -o prim.bin prim.cpp
+```
 
 ```
